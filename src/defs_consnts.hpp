@@ -1,0 +1,6 @@
+#ifndef DEFS_CONSNTS_INCLUDE_HPP_
+#define DEFS_CONSNTS_INCLUDE_HPP_
+
+//#define TEST
+
+#endif //DEFS_CONSNTS_INCLUDE_HPP_

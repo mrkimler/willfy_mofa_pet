@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#Author: mrkimler
+#godot_cpp_template.exe
+#Rating=1-5
+export PW_WINE_USE="PROTON_LG_10-28"
+export PW_PREFIX_NAME="DEFAULT"
+export PORTPROTON_NAME="godot_cpp_template"
+export FILE_DESCRIPTION=""
+export FILE_SHA256SUM="b727269940ba5bd855b549e1692455165ce8410aa442bceae2382d2324571e8f"
+export PW_VULKAN_USE="6"

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://v6lexv5xh38y"]
+
+[node name="Node2D" type="Node2D" unique_id=280739805]
+
+[node name="MouseDragging" type="MouseDragging" parent="." unique_id=726672900]
+position = Vector2(692, 263)
