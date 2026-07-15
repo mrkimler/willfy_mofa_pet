@@ -4,7 +4,9 @@
 *.86_64
 *.import
 *.ppdb
-__pycache__
+__pycache__/*
+*template*.pck
+*template*.sh
 
 # Godot 4+ specific ignores
 .godot/
