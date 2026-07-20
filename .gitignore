@@ -9,6 +9,7 @@ __pycache__/*
 *template*.sh
 **/gen/*
 *.os
+*.zip
 
 # Godot 4+ specific ignores
 .godot/
