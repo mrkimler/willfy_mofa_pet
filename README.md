@@ -2,6 +2,22 @@
 
 So, it's just a pet of twitch streamer Willfy Mofa. She can walk, jump, clrawling (climbing). You can her dragging, but she doesn't like that.
 
+## How compile?
+
+`git clone https://github.com/mrkimler/willfy_mofa_pet/tree/main`
+
+`cd willfy_mofa_pet`
+
+`scons platform=windows target=template_release`
+
+Project file in project. All sources for lib in src.
+
+Now open project in GoDot.
+
+`Project→Export→Windows→Export Project`
+
+Nice!
+
 ## Created with
 I just wanted to create desk pet. This small project was created with:
 
