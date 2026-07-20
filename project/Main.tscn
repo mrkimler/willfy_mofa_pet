@@ -8,22 +8,32 @@
 [ext_resource type="Texture2D" uid="uid://dbpg2478clbl7" path="res://willy_mofa_walking/walking-3.png" id="5_c2ibq"]
 [ext_resource type="Texture2D" uid="uid://6xqccdcehp87" path="res://willy_mofa_crawling/crawling-4.png" id="6_2gh4u"]
 [ext_resource type="Texture2D" uid="uid://c2jqslguax03c" path="res://willy_mofa_walking/walking-4.png" id="6_j4qnp"]
-[ext_resource type="Texture2D" uid="uid://dmg8mmdwdsxuq" path="res://willy_mofa_crawling/crawling-5.png" id="7_devvj"]
 [ext_resource type="Texture2D" uid="uid://co7k61h80u1u5" path="res://willy_mofa_walking/walking-5.png" id="7_fpfj3"]
-[ext_resource type="Texture2D" uid="uid://cexkr56b2wpwy" path="res://willy_mofa_crawling/crawling-6.png" id="8_3b0ty"]
+[ext_resource type="Texture2D" uid="uid://dnbejsj253gwj" path="res://willy_mofa_dragging/dragging-1.png" id="7_pljue"]
+[ext_resource type="Texture2D" uid="uid://cfqnfm2gwfuu8" path="res://willy_mofa_dragging/dragging-2.png" id="8_nx4yo"]
 [ext_resource type="Texture2D" uid="uid://ddhtn0tpxx22t" path="res://willy_mofa_walking/walking-6.png" id="8_sc1dx"]
+[ext_resource type="Texture2D" uid="uid://2vvivb42euur" path="res://willy_mofa_dragging/dragging-3.png" id="9_5tfui"]
 [ext_resource type="Texture2D" uid="uid://c6xg36ikv6ual" path="res://willy_mofa_walking/walking-7.png" id="9_kjvhd"]
 [ext_resource type="Texture2D" uid="uid://dmuielljotkhs" path="res://willy_mofa_jump/jump-1.png" id="9_mxvw5"]
 [ext_resource type="Texture2D" uid="uid://hdb53nh5cjb4" path="res://willy_mofa_walking/walking-8.png" id="10_5tuhn"]
+[ext_resource type="Texture2D" uid="uid://bdl7joo7bq8u1" path="res://willy_mofa_dragging/dragging-4.png" id="10_38apo"]
 [ext_resource type="Texture2D" uid="uid://bdj84v31qc4ty" path="res://willy_mofa_jump/jump-2.png" id="10_xrxkg"]
 [ext_resource type="Texture2D" uid="uid://dc8wyt15naqxq" path="res://willy_mofa_walking/walking-9.png" id="11_2gh4u"]
+[ext_resource type="Texture2D" uid="uid://bvikur0nywdts" path="res://willy_mofa_dragging/dragging-5.png" id="11_khphd"]
 [ext_resource type="Texture2D" uid="uid://5n0wqepx5fft" path="res://willy_mofa_jump/jump-3.png" id="11_sqvbp"]
+[ext_resource type="Texture2D" uid="uid://bmesl1ls0bpcc" path="res://willy_mofa_dragging/dragging-6.png" id="12_g4yo4"]
 [ext_resource type="Texture2D" uid="uid://5d8n7ix6w7v4" path="res://willy_mofa_jump/jump-4.png" id="12_hri7i"]
+[ext_resource type="Texture2D" uid="uid://cbj1xxuq0fd66" path="res://willy_mofa_idle_crawl/idle_crawl-1.png" id="13_im7ls"]
 [ext_resource type="Texture2D" uid="uid://cs8eqvfp3h3yr" path="res://willy_mofa_jump/jump-5.png" id="13_w3rk5"]
 [ext_resource type="Texture2D" uid="uid://dv2o5vhk46vac" path="res://willy_mofa_jump/jump-6.png" id="14_5mvff"]
+[ext_resource type="Texture2D" uid="uid://bjtj4pwt2c54s" path="res://willy_mofa_idle_crawl/idle_crawl-2.png" id="14_a34eg"]
 [ext_resource type="Texture2D" uid="uid://bcugorcbttvj" path="res://willy_mofa_jump/jump-7.png" id="15_oye8v"]
+[ext_resource type="Texture2D" uid="uid://cw3id603im6wh" path="res://willy_mofa_idle_crawl/idle_crawl-3.png" id="15_via5u"]
 [ext_resource type="Texture2D" uid="uid://dm2p8d4lf5hhm" path="res://willy_mofa_jump/jump-8.png" id="16_40n85"]
+[ext_resource type="Texture2D" uid="uid://do0h403lmnxol" path="res://willy_mofa_idle_crawl/idle_crawl-4.png" id="16_ac6pf"]
+[ext_resource type="Texture2D" uid="uid://bxjre1v4nlgnq" path="res://willy_mofa_idle_crawl/idle_crawl-5.png" id="17_ek63v"]
 [ext_resource type="Texture2D" uid="uid://blgsbhw3jcqfu" path="res://willy_mofa_standing/standing-1.png" id="17_ny7u2"]
+[ext_resource type="Texture2D" uid="uid://d3lm1omy0vwqo" path="res://willy_mofa_idle_crawl/idle_crawl-6.png" id="18_oaklg"]
 [ext_resource type="Texture2D" uid="uid://b7xjky8l6l66d" path="res://willy_mofa_standing/standing-2.png" id="18_x3yn0"]
 [ext_resource type="Texture2D" uid="uid://cavec1nd6myn0" path="res://willy_mofa_standing/standing-3.png" id="19_1w2xm"]
 [ext_resource type="Texture2D" uid="uid://blmw65uucljov" path="res://willy_mofa_standing/standing-4.png" id="20_gngx1"]
@@ -52,15 +62,55 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("6_2gh4u")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_devvj")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_3b0ty")
 }],
 "loop": 1,
 "name": &"crawling",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_pljue")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_nx4yo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_5tfui")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_38apo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_khphd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_g4yo4")
+}],
+"loop": 1,
+"name": &"dragging",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_im7ls")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_a34eg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_via5u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_ac6pf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_ek63v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_oaklg")
+}],
+"loop": 1,
+"name": &"idle_crawl",
 "speed": 5.0
 }, {
 "frames": [{
@@ -185,7 +235,8 @@ size = Vector2(10, 32)
 [node name="Main" type="MainWindow" parent="." unique_id=1786823718]
 
 [node name="Pet" type="Pet" parent="." unique_id=1108265514]
-crawl_speed = 200.0
+speed = 75.0
+crawl_speed = 35.0
 visibility_layer = 2
 position = Vector2(540, 960)
 scale = Vector2(2, 2)
@@ -195,8 +246,8 @@ input_pickable = true
 visibility_layer = 2
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_6bcnf")
-animation = &"standing"
-frame_progress = 0.30452192
+animation = &"crawling"
+frame_progress = 0.4374441
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Pet" unique_id=1249734443]
 visibility_layer = 2
@@ -204,9 +255,9 @@ position = Vector2(0, 8)
 shape = SubResource("RectangleShape2D_o7get")
 
 [node name="RightSide" type="RayCast2D" parent="Pet" unique_id=1814192532]
-position = Vector2(5.01, 0)
+position = Vector2(4.51, 0)
 target_position = Vector2(3, 0)
 
 [node name="LeftSide" type="RayCast2D" parent="Pet" unique_id=831768362]
-position = Vector2(-5.01, 0)
+position = Vector2(-4.51, 0)
 target_position = Vector2(-3, 0)

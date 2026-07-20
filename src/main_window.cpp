@@ -166,7 +166,17 @@ void MainWindow::_physics_process(double delta)
             const Vector2i pr_top_left = pet_position - pet_sh_rect->get_size()/2 + psr_offset;
             const Vector2i pr_bottom_right = pet_position + pet_sh_rect->get_size()/2 + psr_offset;
 
-            /*if(pet_position.x >= (right_bottom_corner.x - main_window->get_size().x))
+            /*
+            const PackedVector2Array col_corners = {
+            	Vector2(pr_top_left - main_window->get_position()),
+            	Vector2(pr_bottom_right.x - main_window->get_position().x, pr_top_left.y - main_window->get_position().y),
+             	Vector2(pr_top_left.x - main_window->get_position().x, pr_bottom_right.y - main_window->get_position().y),
+             	Vector2(pr_bottom_right)
+            };
+
+            ds->window_set_mouse_passthrough(col_corners);
+
+            if(pet_position.x >= (right_bottom_corner.x - main_window->get_size().x))
             {
                 UtilityFunctions::print("TRUE!!!!!!");
                 main_window->set_position(right_bottom_corner);

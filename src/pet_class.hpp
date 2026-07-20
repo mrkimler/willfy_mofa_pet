@@ -14,6 +14,7 @@
 #include <godot_cpp/classes/input_event_mouse.hpp>
 #include <godot_cpp/classes/input_event_mouse_button.hpp>
 #include <godot_cpp/classes/input_event_mouse_motion.hpp>
+#include <godot_cpp/classes/random_number_generator.hpp>
 
 #include "defs_consnts.hpp"
 
@@ -34,6 +35,7 @@ class Pet : public CharacterBody2D
 
 		Vector2 gravity;
 		Vector2 velocity;
+		Vector2 drag_velocity;
 		Vector2 input_direction;
 		Vector2 last_input_direction;
 		Vector2 drag_offset;
@@ -43,19 +45,23 @@ class Pet : public CharacterBody2D
 		RayCast2D* ray_left;
 
 		Input* input;
+		RandomNumberGenerator* rng;
 
 		int _pet_state;
 		int _pet_crawling;
+		int _pet_ai;
+		int _last_pet_ai;
 
-		bool _enter_state;
-		bool _first_enter_state;
 		bool is_dragging;
+		bool just_released;
+
 
 		enum pet_state
 		{
 		    WALKING = 0,
 		    CRAWLING = 1,
-			DRAGGING = 2
+			DRAGGING = 2,
+			THROWING = 3
 		};
 
 		enum pet_crawling
@@ -63,6 +69,16 @@ class Pet : public CharacterBody2D
 		    NO_CRAWLING = 0,
             CRAWLING_RIGHT = 1,
             CRAWLING_LEFT = 2
+		};
+
+		enum pet_ai
+		{
+			LEFT,
+			RIGHT,
+			JUMP,
+			STAND,
+			UP,
+			DOWN
 		};
 
 	protected:
@@ -74,9 +90,11 @@ class Pet : public CharacterBody2D
 
 		void crawling();
 		void walking();
-		void dragging();
+		void dragging(double *delta);
+		void throwing();
 		void animation(double *delta);
 		void enter_state(int counter);
+		void pet_ai(int *frq_delta);
 
 		void _ready() override;
 
